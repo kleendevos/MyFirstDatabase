@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="be.vdab.myfirstdatabase.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="My First Database"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_name"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Student Name"/>
+
+    <Spinner
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/faculties_spinner"></Spinner>
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_student"
+        android:text="@string/add_student"
+        />
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_engineers"
+        android:text="@string/delete_all_engineering_students"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_list"
+        android:layout_marginTop="10dp">
+    </ListView>
+
+</LinearLayout>
